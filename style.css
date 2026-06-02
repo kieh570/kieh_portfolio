@@ -1,0 +1,100 @@
+    :root {
+      --primary: #0ea5e9;
+    }
+    
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Times New Roman', Times, serif;
+      scroll-behavior: smooth;
+      background-color: #f8fafc;
+    }
+
+    .project-card {
+      transition: all 0.4s ease;
+      overflow: hidden;
+      border: none;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+    
+    .project-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .skill-badge {
+      transition: all 0.3s ease;
+      background-color: #f1f5f9;
+      color: #334155;
+    }
+    
+    .skill-badge:hover {
+      transform: scale(1.08);
+      background-color: var(--primary);
+      color: white;
+    }
+
+    .section-title {
+      position: relative;
+      display: inline-block;
+      color: #0f172a;
+    }
+    
+    .section-title:after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 4px;
+      background: var(--primary);
+      bottom: -10px;
+      left: 0;
+    }
+
+    /* Modern Footer */
+    footer {
+      background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+      color: #e2e8f0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(to right, transparent, var(--primary), transparent);
+    }
+
+    .footer-link {
+      color: #cbd5e1;
+      transition: all 0.3s ease;
+    }
+    
+    .footer-link:hover {
+      color: var(--primary);
+      transform: translateX(8px);
+    }
+
+    .social-icon {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      transition: all 0.3s ease;
+      font-size: 1.4rem;
+    }
+    
+    .social-icon:hover {
+      background: var(--primary);
+      transform: translateY(-5px) scale(1.1);
+      color: white;
+    }
+  
